@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <?!= include('frontend/config/cdn') ?>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+<componentes style="display: none;">
+  <!-- importación de componentes y cdn -->
+  <?!= include('frontend/config/constantesCdn') ?>
+
+
+  <!-- vistas -->
+
+
+  <!-- helpers -->
+
+
+
+  <!-- components -->
+
+
+
+  <!-- rutas -->
+  <?!= include('frontend/routes/Routes') ?>
+  <?!= include('frontend/routes/RoutesDashboard') ?>
+
+
+
+  <!-- componente root -->
+  <?!= include('frontend/App') ?>
+
+</componentes>
+
+
+</html>
