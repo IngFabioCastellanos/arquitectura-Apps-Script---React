@@ -1,4 +1,4 @@
-# Arquitectura inicial para un proyecto de apps 
+# Arquitectura inicial para un proyecto de Apps Script con React JS
 
 Se recomienda primero clonar el proyecto desde apps script
 Luego si clonar este repositorio
