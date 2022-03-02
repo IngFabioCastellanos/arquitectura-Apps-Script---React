@@ -12,29 +12,8 @@
 </body>
 
 <componentes style="display: none;">
-  <!-- importación de componentes y cdn -->
-  <?!= include('frontend/config/constantesCdn') ?>
-
-
-  <!-- vistas -->
-
-
-  <!-- helpers -->
-
-
-
-  <!-- components -->
-
-
-
-  <!-- rutas -->
-  <?!= include('frontend/routes/Routes') ?>
-
-
-
-  <!-- componente root -->
-  <?!= include('frontend/App') ?>
-
+  <!-- importaciones -->
+  <?!= importaciones.map(ruta => include(ruta)) ?>
 </componentes>
 
 
