@@ -2,9 +2,11 @@
 
 function Inicio() {
 
+  const [isDark, setIsDark] = useState(false);
+
   const modoDark = () => {
-    //hola.classList.replace('bg-blue-500','bg-green-500');
-    document.documentElement.classList.toggle('dark')
+    document.documentElement.classList.toggle('dark');
+    setIsDark(!isDark);
   }
 
   return (
@@ -16,7 +18,11 @@ function Inicio() {
       <button
         onClick={modoDark}
         className="transition duration-300 dark:bg-gray-700 dark:font-bold focus:outline-none dark:text-white p-3 rounded-tl-xl rounded-md bg-blue-100 mt-1">
-        Modo dark
+        {
+          isDark
+            ? <i className="fa-solid fa-sun"></i>
+            : <i className="fa-solid fa-moon"></i>
+        }
       </button>
     </div>
   )
