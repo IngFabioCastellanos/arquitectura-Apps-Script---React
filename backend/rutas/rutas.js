@@ -1,8 +1,11 @@
 const config = ["frontend/config/constantesCdn"];
 
-const componentes = [];
+const componentes = [
+  "frontend/components/Navbar",
+  "frontend/components/ButtonTheme",
+];
 
-const helpers = [];
+const helpers = ["frontend/helpers/theme"];
 
 const redux = [];
 

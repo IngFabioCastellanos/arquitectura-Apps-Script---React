@@ -1,0 +1,30 @@
+//<script type='text/jsx'>
+
+function ButtonTheme() {
+  const theme = localStorage.getItem('landing-theme');
+  const [isDark, setIsDark] = useState(theme == "dark");
+
+  document.documentElement.classList.add(theme);
+
+  const modoDark = (theme) => {
+    chooseTheme(theme);
+    setIsDark(!isDark);
+  }
+
+  return (
+    <button
+      onClick={() => modoDark(isDark ? 'light' : 'dark')}
+      className="transition duration-300 focus:outline-none dark:text-white px-3 ">
+      {
+        isDark
+          ? <i className="fa-solid fa-sun"></i>
+          : <i className="fa-solid fa-moon"></i>
+      }
+    </button>
+  )
+}
+
+
+
+
+//</script>

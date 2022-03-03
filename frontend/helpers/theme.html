@@ -1,0 +1,21 @@
+//<script type='text/jsx'>
+
+function chooseTheme(theme) {
+  switch (theme) {
+    case "light":
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('landing-theme', 'light');
+      break;
+
+    case "dark":
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+      localStorage.setItem('landing-theme', 'dark');
+      break;
+  }
+}
+
+
+
+//</script>
