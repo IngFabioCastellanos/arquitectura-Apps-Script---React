@@ -8,7 +8,7 @@ const redux = [];
 
 const rutas = ["frontend/routes/Routes"];
 
-const vistas = [];
+const vistas = ["frontend/views/Inicio"];
 
 const importaciones = [
   ...config,
